@@ -39,15 +39,10 @@
 				
 			}
 			#banner img{
-				padding-bottom:16px;
+				padding-bottom:10px;
 			}
 /*--- Modify Navigation ---*/
-			#nav table{
-				margin-top:-12px;
-				width:106%;
-				border-collapse:collapse;
-			}
-			#nav td a{
+			/*#nav ul span a{
 				background:linear-gradient(#5E7E9E,#003366);
 				display:table-cell;
 				vertical-align:middle;
@@ -57,14 +52,112 @@
 				font-size:8pt;
 				color:white;
 				text-decoration:none;
+				list-style:none;
+				position:relative;
 			}
-			#nav td a:hover{
+			#nav li a:hover{
 				color:#003366;
 				background:linear-gradient(#FFBF80,#FF9934);
 			}
+			#nav ul a{
+				background-color:#003366;
+				font-size:8pt;
+				padding:5px;
+				height:3.5em;
+				color:white;
+				text-decoration:none;
+			*/
+			#nav{
+				margin-top:10px;
+				margin-left:8px;
+				width:106%;
+			}
+			#nav ul{
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			#nav li{
+				list-style:none;
+				float:left;
+				position:relative;
+			}
+			#nav ul li span{
+				background:linear-gradient(#5E7E9E,#003366);
+				border:1px solid white;
+				width:125px;
+				height:35px;
+				line-height:35px;
+				margin-top:-25px;
+				float:left;
+				position:relative;
+				font-size:8pt;
+			}
+			#nav ul li{
+				top:11px;
+				background-color:#003366;
+				font-size:8pt;
+			}
+			#nav ul li a{
+				text-decoration:none;
+				color:white;
+				display:block;
+				height:30px:
+				width:300x;
+			}
+			#nav ul li span a:hover{
+				color:#003366;
+				background:linear-gradient(#FFBF80,#FF9934);
+			}
+			#nav ul li a:hover{
+				color:#003366;
+				background-color:#FF9934;
+			}
+			#nav ul ul{
+				position:absolute;
+				visibility:hidden;
+			}
+			#nav ul li:hover ul{
+				visibility:visible;
+			}
+			.Directory li{
+			width:100px;
+			height:25px;
+			line-height:25px;
+			}
+			.AboutBHS li{
+			width:160px;
+			height:25px;
+			line-height:25px;
+			}
+			.Academics li{
+			width:210px;
+			height:25px;
+			line-height:25px;
+			}
+			.Students li{
+			width:165px;
+			height:25px;
+			line-height:25px;
+			}
+			.Parents li{
+			width:250px;
+			height:25px;
+			line-height:25px;
+			}
+			.Library li{
+			width:200px;
+			height:25px;
+			line-height:25px;
+			}
+			.Guidance li{
+			width:175px;
+			height:25px;
+			line-height:25px;
+			}
 /*--- Modify Login ---*/
 			#login{
-				margin-top:8px;
+				margin-top:9px;
 				width:100%;
 			}
 			#login a{
@@ -80,6 +173,7 @@
 				height:60px;
 			}
 			#login td{
+				padding-top:25px;
 				padding-left:15px;
 				background-color:white;
 			}
@@ -115,10 +209,10 @@
 			#content h3{
 				font-size:16px;
 			}
+/*--- Modify Mid Section of Main Content ---*/
 			#content span{
 				color:#C00000;
 			}
-/*--- Modify Mid Section of Main Content ---*/
 			#content_mid{
 				margin-left:40px;
 				float:left;
@@ -181,6 +275,7 @@
 				float:left;
 			}
 			#side ul{
+				border-radius:1px;
 				box-shadow:0.4px 0.4px 0.4px 0.4px #B3B3B3;
 				border-top:blue solid 3px;
 				font-size:9pt;
@@ -206,19 +301,60 @@
 				font-size:16px;
 			}
 			#calander{
-				margin-top:3px;
-				font-weight:bold;
-				color:black;
 				float:left;
+				margin-left:-32px;
+				
+
+			}
+			#calander table{
+				border-radius:1px;
+				box-shadow:0.5px 0.5px 0.5px 0.5px #B3B3B3;
+				width:300px;
+				border-collapse:collapse;
+			}
+			.heading td{
+				font-weight:bold;
 				background:linear-gradient(#FFBF80,#FF9934);
 				font-size:7pt;
-				width:295px;
+				width:254px;
 				height:26px;
-				padding-bottom:3px;
+				margin-left:-29px;
+				line-height:25px;
+				padding-left:35px;
+			}
+			.info td{
+				text-align:center;
+				background-color:#FFF1B8;
+				font-size:9pt;
+				height:50px;
+				padding-top:10px;
+			}
+			#publication{
+				float:left;
 				margin-left:-29px;
 			}
-			#calander ul{
-				margin-left:-20px;
+			#publication table{
+				border:orange solid 1px;
+				margin-top:15px;
+				border-radius:1px;
+				box-shadow:0.5px 0.5px 0.5px 0.5px #B3B3B3;
+			}
+			#publication td{
+				width:254px;
+			}
+			.title td{
+				padding-left:35px;
+			}
+			.news td{
+				padding-left:15px;
+				font-size:9pt;
+			}
+			.news span{
+				font-weight:bold;
+			}
+			.baysider img{
+				padding-left:15px;
+				width:250px;
 			}
 		</style>
 	</head>
@@ -235,16 +371,18 @@
 				<img src="http://static3.echalk.net/www/bayside/site/layout/HS495_CONTEMPORARY_02.jpg"/>
 			</div>
 			<div id="nav">
-				<table style="width:107%">
-					<tr>
-						<td> <a href="">DIRECTORY</a> </td>
-						<ul>
+				<ul>
+					<li>
+						<span><a href="">DIRECTORY</a></span>
+						<ul class="Directory">
 							<li> <a href="">FACTULY & STAFF</a> </li>
 							<li> <a href="">CLASS PAGES</a> </li>
 							<li> <a href="">GROUP PAGES</a> </li>
 						</ul>
-						<td> <a href="">ABOUT BHS</a> </td>
-						<ul>
+					</li>
+					<li>
+						<span><a href="">ABOUT BHS</a></span>
+						<ul class="AboutBHS">
 							<li> <a href="">BELL SCHEDULE 2015-16</a> </li>
 							<li> <a href="">CALENDAR - STRING 2015</a> </li>
 							<li> <a href="">CELL PHONE POLICY</a> </li>
@@ -252,9 +390,11 @@
 							<li> <a href="">DRESS CODE</a> </li>
 							<li> <a href="">HISTORY IN PHOTOGRAPHS</a> </li>
 						</ul>
-						<td> <a href="">CALENDER</a> </td>
-						<td> <a href="">ACADEMICS</a> </td>
-						<ul>
+					</li>
+					<li><span><a href="">CALENDER</a></span></li>
+					<li>	
+						<span><a href="">ACADEMICS</a></span>
+						<ul class="Academics">
 							<li> <a href="">ART,MUSIC,AND LANGUAGES</a> </li>
 							<li> <a href="">BUSINESS EDUCATION / TECHNOLOGY</a> </li>
 							<li> <a href="">ENGLISH / LANGUAGE ARTS</a> </li>
@@ -265,8 +405,10 @@
 							<li> <a href="">SOCIAL STUDIES</a> </li>
 							<li> <a href="">SPECIAL PROGRAMS</a> </li>
 						</ul>
-						<td> <a href="">STUDENTS</a> </td> 
-						<ul>
+						</li>
+					<li>
+						<span><a href="">STUDENTS</a></span>
+						<ul class="Students">
 							<li> <a href="">BHS FRESHMEN</a> </li>
 							<li> <a href="">BHS SOPHOMORES</a> </li>
 							<li> <a href="">BHS JUNIORS</a> </li>
@@ -277,8 +419,10 @@
 							<li> <a href="">HOW TO USE ECHALK</a> </li>
 							<li> <a href="">TRANSCRIPT REQUEST FORM</a> </li>
 						</ul>
-						<td> <a href="">PARENTS</a> </td> 
-						<ul>
+					</li>
+					<li>
+						<span><a href="">PARENTS</a></span>
+						<ul class="Parents">
 							<li> <a href="">PARENT RESOURCES</a> </li>
 							<li> <a href="">NYCODE 2014-2015 SCHOOL YEAR CALENDAR</a> </li>
 							<li> <a href="">PARENT REGISTRATION</a> </li>
@@ -286,8 +430,10 @@
 							<li> <a href="">PTA EXECUTIVE BOARD 2013-14</a> </li>
 							<li> <a href="">SLT MEMBERS 2013-14</a> </li>
 						</ul>
-						<td> <a href="">LIBRARY</a> </td>
-						<ul>
+					</li>
+					<li>
+						<span><a href="">LIBRARY</a></span>
+						<ul class="Library">
 							<li> <a href="">ABOUT THE LIBRARY</a> </li>
 							<li> <a href="">BOOKS AT BHS - ONLINE BOOK CATALOG</a> </li>
 							<li> <a href="">DATABASES</a> </li>
@@ -299,8 +445,10 @@
 							<li> <a href="">QUEENS LIBRARY</a> </li>
 							<li> <a href="">WEBSITE EVALUATION WORKSHEET</a> </li>
 						</ul>
-						<td> <a href="">GUIDANCE</a> </td>
-						<ul>
+					</li>
+					<li>
+						<span><a href="">GUIDANCE</a></span>
+						<ul class="Guidance">
 							<li> <a href="">GUIDANCE DIRECTORY</a> </li>
 							<li> <a href="">COLLEGE / COLLEGE NOW</a> </li>
 							<li> <a href="">PSAT / SAT</a> </li>
@@ -308,103 +456,118 @@
 							<li> <a href="">INTERNSHIPS / WORKSHOPS</a> </li>
 							<li> <a href="">FAQS</a> </li>
 						</ul>
+					</li>
+				<ul>
+			</nav>
+		</div>
+		<div id="login">
+			<table style="width:106%">
+				<tr>
+					<td> <h2>LOGIN</h2> </td>
+					<td> <span> Username:<input type="text" /> </span> </td>
+					<td> <span> Password:<input type="password" /> </span> </td>
+					<td> <input class="button" type="button" value="LOGIN" /> </td>
+					<td> <a href="">Forgot Password?</a> </td>
+					<td> <span style="font-size:6.5pt">Need Help? <a href="">English</a> | <a href="">Espa&ntildeol</a> </td></span>
+				<tr>
+			</table>
+		</div>
+		<div id="main">
+			<div id="content">
+				<table>
+					<td>
+						<ul>
+							<h3>Daily Announcements <img src="rss_button.gif"/> </h3>
+							<li> <span> <img src="http://static3.echalk.net/images/ico_urgent_triangle.gif"/> All new eChalk accounts were created,and all classes were loaded.</span> </li>
+							<li> Student log in: </li>
+							<li> user name - your firstname.lastname </li>				
+							<li> password - your 9 digit OSIS# </li>
+						</ul>
+					</td>
+				</table>
+			</div>
+			<div id="content_mid">
+				<ul class="notification">
+					<h2>PROSPECTIVE STUDENTS</h2>
+					<h5>There will be 3 open house dates for the 2016-2017 school year:<h5>
+				</ul>
+				<ul class="date">	
+					<li><span>Tuesday, October 20, 2015 at 7pm </span> </li>
+					<li><span>Thursday, November 12, 2015 at 7pm </span> </li>
+					<li><span>Saturday, November 14, 2015 from 12 noon - 3pm </span> </li>
+				</ul>
+				<ul class="program" style="font-weight:bold	">
+					<h4>Specialized programs:</h4>
+					<li>Q12A - <a href="">Digital Art & Design</a> </li>
+					<li>Q12B - <a href="">Music: Performance & Production</a> </li>
+					<li>Q12C - <a href="">Environmental Engineering & Technology</a> </li>
+					<li>Q12D - <a href="">Humanities & Non-Profit Management</a> </li>
+					<li>Q12E - <a href="">Computer Programming & Web Design</a> </li>
+					<li>Q12G - <a href="">Sports Medicine & Management</a> </li> 
+				</ul>
+				<ul>
+					<a href="">FAQs for Students applying for 2016-2017 school year</a>
+				</ul>
+				<ul class="audition" style="font-weight:bold">
+					<li> <h3>Audition Dates:</h3> </li>
+					<li> <span>Saturday, November 21st, 2015</span> </li>
+					<li> <span>Sunday, December 13th, 2015</span> </li>
+					<li> <span>Saturday, January 9th, 2016</span> </li>
+				</ul> 
+				<ul class="instruction">
+					<li>**Please plan to arrive 1/2 hour before audition session begins.</li> <br>
+					<li>***Please visit Digital Art & Design and Music: Performance & Production webpages for time details.</li>
+				</ul>
+				<ul class="policy">
+					<a href="">Bayside High School cell phone policy - 3/1/2015</a>
+				</ul>
+				<ul class="classes">
+					<li> <h4>2015 PTA SAT Classes at Bayside High School</h4> </li>
+					<li> <a href="">Fall 2015 Weekday Classes</a> </li>
+					<li> <a href="">Fall 2015 Saturday Classes</a> </li>
+				</ul>
+			</div>
+			<div id="side">
+				<ul>
+					<table>
+						<tr>	
+							<td>
+								<img style="width:50px" src="http://static3.echalk.net/www/bayside/images/facebook_twitter_logo.jpg"/>
+							</td>
+							<td>
+								LIKE us on <span> <a href="">Facebook</a> </span> <br>
+								FOLLOW us on <span> <a href="">Twitter</a> </span>
+							</td>
+						</tr>
+					</table>
+					<li><h4>Instructions for logging into: </h4> </li>
+					<li><span> <a href="">E-Chalk</a> (log in above) </span> </li>
+					<li><span> <a href="">Pupil Path (pupilpath.com)</a> </span> </li>	
+					<li>* In <a href="">Korean</a> </li>
+					<li>* In <a href="">Chinese</a> </li>
+					<li>* In <a href="">Spanish</a> </li>
+				</ul>
+			</div>
+			<div id="calander">
+				<table>
+					<tr class="heading">
+						<td>UPCOMING EVENTS <img src="rss_button.gif"/></td>
+					</tr>
+					<tr class="info">
+						<td><span><a href="">View Monthly Calendar</a><span></td>
 					</tr>
 				</table>
 			</div>
-			<div id="login">
-				<table style="width:106%">
-					<tr>
-						<td> <h2>LOGIN</h2> </td>
-						<td> <span> Username:<input type="text" /> </span> </td>
-						<td> <span> Password:<input type="password" /> </span> </td>
-						<td> <input class="button" type="button" value="LOGIN" /> </td>
-						<td> <a href="">Forgot Password?</a> </td>
-						<td> <span style="font-size:6.5pt">Need Help? <a href="">English</a> | <a href="">Espa&ntildeol</a> </td></span>
-					<tr>
+			<div id="publication">
+				<table>
+					<tr class="title">
+						<td><h4>Bayside Publications<img src="rss_button.gif"/><h4></td>
+					</tr>
+					<tr class="news">
+						<td>Check out <span>The Baysider: Community Edition</span> - our newest publication!</td>
+					</tr>
+					<td class="baysider"> <a href=""><img src="http://static3.echalk.net/www/ud00/5/5b7cf86c9cae4dfb955648db6855bb3d/Personal_Images/baysider.gif"/></a></td>
 				</table>
-			</div>
-			<div id="main">
-				<div id="content">
-					<table>
-						<td>
-							<ul>
-								<h3>Daily Announcements <img src="rss_button.gif"/> </h3>
-								<li> <span> <img src="http://static3.echalk.net/images/ico_urgent_triangle.gif"/> All new eChalk accounts were created,and all classes were loaded.</span> </li>
-								<li> Student log in: </li>
-								<li> user name - your firstname.lastname </li>				
-								<li> password - your 9 digit OSIS# </li>
-							</ul>
-						</td>
-					</table>
-				</div>
-				<div id="content_mid">
-					<ul class="notification">
-						<h2>PROSPECTIVE STUDENTS</h2>
-						<h5>There will be 3 open house dates for the 2016-2017 school year:<h5>
-					</ul>
-					<ul class="date">	
-						<li><span>Tuesday, October 20, 2015 at 7pm </span> </li>
-						<li><span>Thursday, November 12, 2015 at 7pm </span> </li>
-						<li><span>Saturday, November 14, 2015 from 12 noon - 3pm </span> </li>
-					</ul>
-					<ul class="program" style="font-weight:bold	">
-						<h4>Specialized programs:</h4>
-						<li>Q12A - <a href="">Digital Art & Design</a> </li>
-						<li>Q12B - <a href="">Music: Performance & Production</a> </li>
-						<li>Q12C - <a href="">Environmental Engineering & Technology</a> </li>
-						<li>Q12D - <a href="">Humanities & Non-Profit Management</a> </li>
-						<li>Q12E - <a href="">Computer Programming & Web Design</a> </li>
-						<li>Q12G - <a href="">Sports Medicine & Management</a> </li> 
-					</ul>
-					<ul>
-						<a href="">FAQs for Students applying for 2016-2017 school year</a>
-					</ul>
-					<ul class="audition" style="font-weight:bold">
-						<li> <h3>Audition Dates:</h3> </li>
-						<li> <span>Saturday, November 21st, 2015</span> </li>
-						<li> <span>Sunday, December 13th, 2015</span> </li>
-						<li> <span>Saturday, January 9th, 2016</span> </li>
-					</ul> 
-					<ul class="instruction">
-						<li>**Please plan to arrive 1/2 hour before audition session begins.</li> <br>
-						<li>***Please visit Digital Art & Design and Music: Performance & Production webpages for time details.</li>
-					</ul>
-					<ul class="policy">
-						<a href="">Bayside High School cell phone policy - 3/1/2015</a>
-					</ul>
-					<ul class="classes">
-						<li> <h4>2015 PTA SAT Classes at Bayside High School</h4> </li>
-						<li> <a href="">Fall 2015 Weekday Classes</a> </li>
-						<li> <a href="">Fall 2015 Saturday Classes</a> </li>
-					</ul>
-				</div>
-				<div id="side">
-					<ul>
-						<table>
-							<tr>	
-								<td>
-									<img style="width:50px" src="http://static3.echalk.net/www/bayside/images/facebook_twitter_logo.jpg"/>
-								</td>
-								<td>
-									LIKE us on <span> <a href="">Facebook</a> </span> <br>
-									FOLLOW us on <span> <a href="">Twitter</a> </span>
-								</td>
-							</tr>
-						</table>
-						<li><h4>Instructions for logging into: </h4> </li>
-						<li><span> <a href="">E-Chalk</a> (log in above) </span> </li>
-						<li><span> <a href="">Pupil Path (pupilpath.com)</a> </span> </li>	
-						<li>* In <a href="">Korean</a> </li>
-						<li>* In <a href="">Chinese</a> </li>
-						<li>* In <a href="">Spanish</a> </li>
-					</ul>
-				</div>
-				<div id="calander">
-					<ul>
-						<li>UPCOMING EVENTS</li>
-					</ul>
-				</div>
-			</div>
 		</div>
 	</body>
 </html>
